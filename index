@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玲玲和恩恩</title>
+</head>
+<body>
+    <h1>我们相爱</h1>
+    <p id="result"></p>
+
+    <script>
+        // 定义起始日期为2017年1月1日
+        const startDate = new Date('2017-01-01');
+        // 获取当前日期
+        const currentDate = new Date();
+
+        // 计算两个日期之间的毫秒数差
+        const timeDifference = currentDate - startDate;
+
+        // 将毫秒数差转换为天数
+        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+        // 显示结果
+        document.getElementById('result').innerText = `相爱已经 ${daysDifference} 天。`;
+    </script>
+</body>
+</html>
